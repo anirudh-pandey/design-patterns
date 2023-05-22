@@ -4,14 +4,4 @@ public class DecoyDuck : Duck
 	{
 
 	}
-
-	public override void quack()
-	{
-		// does not speaks.
-	}
-
-	public override void fly()
-	{
-		// does not fly.
-	}
 }

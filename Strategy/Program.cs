@@ -4,13 +4,10 @@
 	{
 		Duck duck = new();
 		duck.display();
-		duck.quack();
-		duck.fly();
 
 		RubberDuck rubberDuck = new("Rubber Duck");
 		rubberDuck.display();
 		rubberDuck.quack();
-		rubberDuck.fly();
 
 		MallardDuck mallardDuck = new("Mallard Duck");
 		mallardDuck.display();
@@ -19,8 +16,6 @@
 
 		DecoyDuck decoyDuck = new("Decoy Duck");
 		decoyDuck.display();
-		decoyDuck.quack();
-		decoyDuck.fly();
 
 
 	}

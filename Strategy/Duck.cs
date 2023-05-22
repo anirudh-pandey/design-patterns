@@ -13,14 +13,4 @@ public class Duck
 	{
 		Console.WriteLine("Look, a "+this.name+"!");
 	}
-
-	public virtual void quack()
-	{
-		Console.WriteLine("Quack!! Quack!!");
-	}
-
-	public virtual void fly()
-	{
-		Console.WriteLine("buf buff(beats wings) and flies away...");
-	}
 }

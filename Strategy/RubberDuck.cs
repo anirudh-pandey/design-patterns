@@ -1,17 +1,12 @@
-public class RubberDuck : Duck
+public class RubberDuck : Duck, IQuackable
 {
 	public RubberDuck(string name) : base(name)
 	{
 
 	}
 
-	public override void quack()
+	public void quack()
 	{
 		Console.WriteLine("Squeak!! Squeak!!");
-	}
-
-	public override void fly()
-	{
-		// does not fly.
 	}
 }
