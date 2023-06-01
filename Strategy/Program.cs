@@ -5,17 +5,32 @@
 		Duck duck = new();
 		duck.display();
 
-		RubberDuck rubberDuck = new("Rubber Duck");
-		rubberDuck.display();
-		rubberDuck.quack();
-
-		MallardDuck mallardDuck = new("Mallard Duck");
+		MallardDuck mallardDuck = new(
+			"Mallard Duck",
+			new FlyWithWings(),
+			new Quack()
+		);
 		mallardDuck.display();
-		mallardDuck.quack();
-		mallardDuck.fly();
+		mallardDuck.performFly();
+		mallardDuck.performQuack();
+		
+		RubberDuck rubberDuck = new(
+			"Rubber Duck",
+			new Flightless(),
+			new Squeak()
+		);
+		rubberDuck.display();
+		rubberDuck.performFly();
+		rubberDuck.performQuack();
 
-		DecoyDuck decoyDuck = new("Decoy Duck");
+		DecoyDuck decoyDuck = new(
+			"Decoy Duck",
+			new Flightless(),
+			new Mute()
+		);
 		decoyDuck.display();
+		decoyDuck.performFly();
+		decoyDuck.performQuack();
 
 
 	}
